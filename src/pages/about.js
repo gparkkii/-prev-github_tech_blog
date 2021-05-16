@@ -1,35 +1,31 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import { rhythm } from '../utils/typography'
 import * as Lang from '../constants'
-import { Layout } from '../layout'
-import { Head } from '../components/head'
-import { HOME_TITLE } from '../constants'
 
 export default ({ data, location }) => {
   const resumes = data.allMarkdownRemark.edges
 
   const resume = resumes
-    .filter(({ node }) => node.frontmatter.lang === Lang.ENGLISH)
+    .filter(({ node }) => node.frontmatter.lang === Lang.KOREAN)
     .map(({ node }) => node)[0]
 
   return (
-    <Layout location={location} title={`Gparkkii.io`}>
-      <Head title={HOME_TITLE}/>
       <div
+        className="about"
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(29),
           padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
             3 / 4
           )}`,
         }}
       >
+        <Link to={'/'}>◀︎ Back Home</Link>
         <div dangerouslySetInnerHTML={{ __html: resume.html }} />
       </div>
-    </Layout>
   )
 }
 
