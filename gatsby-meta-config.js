@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Gparkkii.io`,
+  title: `Gparkkii.log`,
   description: `Blog posted about Gparkkii's Dev Note`,
   author: `Gparkkii`,
   introduction: `[Gparkkii's Dev Note] 프론트엔드 개발자 지파키의 성장 일지`,
@@ -13,7 +13,7 @@ module.exports = {
     instagram: ``, // Your Instagram account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`, `developer`, `frontend`],
+  keywords: [`blog`, `developer`, `development`, `frontend`, `react`, `web`, `javascript`, `typescript`,],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 'gparkkii/gparkkii.github.io', // Your repository for archive comment
@@ -21,11 +21,11 @@ module.exports = {
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
   },
+  share: {
+    facebookAppId: '', // v3.2
+  },
   sponsor: {
     buyMeACoffeeId: 'gparkkii',
-  },
-  share: {
-    facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: '0', // Add your google analytics tranking ID
 }
