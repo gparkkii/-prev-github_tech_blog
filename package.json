@@ -3,9 +3,9 @@
   "private": true,
   "description": "Gatsby blog starter template",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "Gparkkii[JiYeonPark]<jyp933@gmail.com>",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/gparkkii/gparkkii.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -22,7 +22,7 @@
     "gatsby-plugin-sitemap": "^2.0.10",
     "gatsby-plugin-typography": "^2.2.10",
     "gatsby-remark-autolink-headers": "^2.0.16",
-    "gatsby-remark-copy-linked-files": "^2.0.11",
+    "gatsby-remark-copy-linked-files": "^2.0.11", 
     "gatsby-remark-emoji": "0.0.2",
     "gatsby-remark-images": "^3.0.10",
     "gatsby-remark-images-medium-zoom": "^1.7.0",
@@ -66,7 +66,7 @@
     "recursive-readdir": "^2.2.2",
     "signale": "^1.3.0"
   },
-  "homepage": "https://github.com/JaeYeopHan/gatsby-starter-bee#readme",
+  "homepage": "https://github.com/gparkkii/gparkkii.github.io",
   "keywords": [
     "gatsby"
   ],
@@ -74,7 +74,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JaeYeopHan/gatsby-starter-bee.git"
+    "url": "git+https://github.com/gparkkii/gparkkii.github.io.git"
   },
   "scripts": {
     "post": "gatsby-post-gen",

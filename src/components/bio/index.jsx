@@ -23,38 +23,69 @@ export const Bio = () => (
                 }}
               />
               <div className="author-name">
-                <span className="author-name-prefix">Written by</span>
+                <span className="author-name-prefix">
+                  프론트엔드 개발자 박지연입니다.
+                </span>
                 <Link to={'/about'} className="author-name-content">
                   <span>@{author}</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
-                  {social.instagram && (
-                    <a href={`https://www.instagram.com/${social.instagram}`}>
-                      Instagram
+                  {social.github && (
+                    <a
+                      href={`https://github.com/${social.github}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      ✤ GitHub
                     </a>
                   )}
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
+                  {social.velog && (
+                    <a
+                      href={`https://velog.com/${social.velog}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      ✤ Velog
+                    </a>
                   )}
                   {social.twitter && (
-                    <a href={`https://twitter.com/${social.twitter}`}>
+                    <a
+                      href={`https://twitter.com/${social.twitter}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       Twitter
                     </a>
                   )}
                   {social.facebook && (
-                    <a href={`https://www.facebook.com/${social.facebook}`}>
+                    <a
+                      href={`https://www.facebook.com/${social.facebook}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       Facebook
                     </a>
                   )}
                   {social.linkedin && (
-                    <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
-                      LinkedIn
+                    <a
+                      href={`https://www.linkedin.com/in/${social.linkedin}/`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      ✤ LinkedIn
                     </a>
                   )}
+                  {social.instagram && (
+                    <a
+                      href={`https://www.instagram.com/${social.instagram}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      ✤ Instagram
+                    </a>
+                  )}
+                  <Link to={'/about'}>✤ Resume</Link>
                 </p>
               </div>
             </div>
@@ -81,7 +112,7 @@ const bioQuery = graphql`
         social {
           twitter
           github
-          medium
+          velog
           facebook
           linkedin
           instagram

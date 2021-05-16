@@ -1,21 +1,41 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-bottom: 24px;
 
   .author-description {
     display: flex;
+    position: relative;
+  }
+
+  .author-description::before {
+    position: absolute;
+    z-index: 999;
+    background: url(../../../content/assets/crown.png);
+    display: inline-block;
+    width: 40px;
+    background-size: contain;
+    height: 40px;
+    content: "";
+    transform: rotate(-42deg);
+    top: -14px;
+    left: -14px;
   }
 
   .author-image {
-    margin-top: 12px;
+    margin-top: 2px;
     margin-right: 12px;
     margin-bottom: 0;
-    min-width: 72px;
+    min-width: 80px;
+    min-height: 80px;
   }
 
   .author-name-prefix {
     font-size: 90%;
+    font-weight: 500;
     margin-right: 4px;
   }
 
@@ -32,15 +52,15 @@
   .author-introduction {
     margin-top: 4px;
     font-size: 80%;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .author-socials {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   a {
-    margin-right: 8px;
+    margin-right: 16px;
     font-size: 80%;
 
     &.visited {
