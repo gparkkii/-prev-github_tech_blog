@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Gparkkii.log`,
+  title: `Gparkkii.io`,
   description: `Blog posted about Gparkkii's Dev Note`,
   author: `Gparkkii`,
   introduction: `[Gparkkii's Dev Note] 프론트엔드 개발자 지파키의 성장 일지`,
