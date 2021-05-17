@@ -1,6 +1,9 @@
 .about {
   h1 {
-    font-size: 36px;
+    position: relative;
+    font-size: 48px;
+    color: #111138;
+    line-height: 1.45;
   }
 
   h2 {
@@ -9,38 +12,56 @@
     margin-top: 20px;
     margin-bottom: 0px;
     border-bottom: none;
-    font-size: 30px;
-    &::before {
-      content: "";
+    font-size: 36px;
+    &::after {
       position: absolute;
       display: block;
-      top: 15px;
-      left: -2px;
-      width: 104%;
-      height: 7.5px;
-      border-radius: 8px;
-      background-color: #5297ff;
+      bottom: 16px;
+      right: -15px;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: #277cec;
       content: "";
-      z-index: -1;
-      opacity: 0.8;
     }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   top: 18px;
+    //   left: -2px;
+    //   width: 104%;
+    //   height: 10px;
+    //   background-color: #d6ddff;
+    //   content: "";
+    //   z-index: -1;
+    // }
   }
 
   h3 {
     position: relative;
     display: inline-block;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 0px;
+    color: #277cec;
     &::after {
       position: absolute;
       display: block;
-      top: -2px;
-      left: -12px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #5297ff;
-      content: "";
+      bottom: 4px;
+      right: -18px;
+      color: #277cec;
+      content: "_";
+      animation: blink 1s linear infinite;
+    }
+  }
+
+  @keyframes blink {
+    0% {
+      color: #277cec;
+    }
+    100% {
+      color: transparent;
     }
   }
 
@@ -48,11 +69,12 @@
     position: relative;
     display: block;
     width: fit-content;
-    color: #000000;
+    color: #101031;
   }
 
   li {
     font-size: 16px;
+    color: #242436;
   }
 
   div.final {
@@ -60,8 +82,12 @@
   }
 
   code.language-text {
-    color: #0f6ae5;
-    border: 1.4px solid #0f6ae5;
+    color: #ee587e;
+    border: 1.4px solid #ee587e;
     background-color: transparent;
+  }
+
+  a {
+    color: #4395ff;
   }
 }
