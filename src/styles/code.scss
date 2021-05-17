@@ -18,6 +18,10 @@
   border-left: 0.35em solid #0687f0;
 }
 
+h2 {
+  border-bottom: none;
+}
+
 blockquote {
   color: $blockquote-text-color;
 }
