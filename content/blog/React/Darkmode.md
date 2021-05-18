@@ -1,7 +1,7 @@
 ---
 title: '리액트 다크모드 구현하기 feat. styled-components & context API'
 date: 2021-4-9 16:21:13
-category: 'React'
+category: 'react'
 draft: false
 ---
 
