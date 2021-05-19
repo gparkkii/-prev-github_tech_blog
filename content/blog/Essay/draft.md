@@ -5,4 +5,4 @@ category: 'essay'
 draft: true
 ---
 
-Draft Post
+Essay Draft Post

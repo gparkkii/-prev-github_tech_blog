@@ -5,4 +5,4 @@ category: 'javascript'
 draft: true
 ---
 
-Draft Post
+JavaScript Draft Post

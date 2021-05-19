@@ -5,4 +5,4 @@ category: 'essay'
 draft: true
 ---
 
-Draft Post
+Gatsby Draft Post
