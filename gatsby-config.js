@@ -96,7 +96,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://gparkkii.github.io',
+        host: 'https://gparkkii.github.io/',
         sitemap: 'https://gparkkii.github.io/sitemap.xml',
         policy: [
           {
