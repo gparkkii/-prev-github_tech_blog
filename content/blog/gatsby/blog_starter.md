@@ -1,9 +1,11 @@
 ---
 title: 'Gatsby로 나만의 블로그 만들기 feat. gatsby-starter-bee (1)'
 date: 2021-5-20 18:27:13
-category: 'essay'
+category: 'gatsby'
 draft: false
 ---
+
+![gparkkii.io](./images/blog.png)
 
 ## 나만의 블로그를 만들어 보자 💪🏻
 
@@ -90,13 +92,65 @@ git push -u origin master
 ### package.json 설정
 
 우선 package.json 파일로 들어가 괄호쳐놓은 name, description, url 등의 부분을 자신의 정보에 맞게 수정한다.
-![](https://images.velog.io/images/gparkkii/post/e966c580-d22d-4521-9b49-7b6266b4abc2/code.png)
+
+```javascript
+// package.json
+{
+  "name": "gparkkii.io",
+  "private": true,
+  "description": "Gparkkii's Dev Note",
+  "version": "0.1.0",
+  "author": "Gparkkii[JiYeonPark]<jyp933@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gparkkii/gparkkii.github.io/issues"
+  },
+
+  ...
+
+  "homepage": "https://gparkkii.github.io",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gparkkii/gparkkii.github.io.git"
+  },
+}
+```
 
 ### gatsby.meta.config 설정
 
 gatsby.meta.config 파일에 쓰여진 주석에 맞게 알맞은 정보를 등록한다.
 
-![](https://images.velog.io/images/gparkkii/post/5a67399a-f721-4201-9fba-a05ca1008f5e/code.png)
+```javascript
+module.exports = {
+  title: `Gparkkii.io`,
+  description: `Blog posted about Gparkkii's Dev Note`,
+  author: `Gparkkii`,
+  introduction: `[Gparkkii's Dev Note] 프론트엔드 개발자 지파키의 성장 일지`,
+  siteUrl: `https://gparkkii.github.io`, // Your blog site url
+  social: {
+    twitter: ``, // Your Twitter account
+    github: ``, // Your GitHub account
+    velog: ``, // Your Velog account
+    facebook: ``, // Your Facebook account
+    linkedin: ``, // Your LinkedIn account
+    instagram: ``, // Your Instagram account
+  },
+
+  ...
+
+  share: {
+    facebookAppId: '', // v3.2
+  },
+  sponsor: {
+    buyMeACoffeeId: '',
+  },
+  ga: '', // Add your google analytics tranking ID
+}
+```
 
 ### 수정된 버전 확인
 
