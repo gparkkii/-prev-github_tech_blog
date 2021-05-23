@@ -13,7 +13,7 @@ module.exports = {
     instagram: ``, // Your Instagram account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`, `developer`, `development`, `frontend`, `react`, `web`, `javascript`, `typescript`,],
+  keywords: [`gparkkii`, `blog`, `developer`, `development`, `frontend`, `react`, `web`, `javascript`, `typescript`,],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 'gparkkii/gparkkii.github.io', // Your repository for archive comment
