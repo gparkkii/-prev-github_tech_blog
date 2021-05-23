@@ -42,7 +42,7 @@ export const Bio = () => (
                   )}
                   {social.velog && (
                     <a
-                      href={`https://velog.com/${social.velog}`}
+                      href={`https://velog.io/${social.velog}`}
                       target="_blank"
                       rel="noreferrer noopener"
                     >
