@@ -2,7 +2,7 @@
 title: '[TIL-1] React-Native란 무엇인가?'
 date: 2021-5-27 13:21:13
 category: 'TIL'
-draft: true
+draft: false
 ---
 
 # All about React Native
